@@ -4,12 +4,9 @@ import { SERVICE, IS_PRODUCTION } from '../CONFIG.mjs'
 
 const DEFAULT_IV_HEX = '00000000000000000000000000000000'
 
-const KeyMoizer = new Map()
-
 export default class Crypto {
   constructor (config = {}) {
     this.MASTER_KEY_HEX = config.ENCRYPT_MASTER_KEY_HEX || ''
-    this.ENCRYPTION_KEY_HEX = config.ENCRYPT_ENCRYPTION_KEY_HEX || ''
     this.MASTER_IV_HEX = config.ENCRYPT_MASTER_IV_HEX || DEFAULT_IV_HEX
 
     this.KEY_BUFFER = Buffer.from(this.MASTER_KEY_HEX, 'hex')
