@@ -1,0 +1,38 @@
+{
+  "name": "@am92/blacklister",
+  "version": "1.0.0",
+  "description": "Encrypting, Hashing and Masking Utility",
+  "type": "module",
+  "main": "src/Blacklister.mjs",
+  "module": "src/Blacklister.mjs",
+  "scripts": {
+    "test": "echo 'Error: no test specified'",
+    "preversion": "pnpm test",
+    "version": "echo 'Versioning'",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": "git@github.com:heliumtank92/am92-blacklister.git",
+  "homepage": "https://github.com/heliumtank92/am92-blacklister#readme",
+  "contributors": [
+    {
+      "name": "Ankit Gandhi",
+      "email": "ankitgandhi452@gmail.com",
+      "url": "https://github.com/ankitgandhi452"
+    },
+    {
+      "name": "Mehul Agarwal",
+      "email": "agarwalmehul92@gmail.com",
+      "url": "https://github.com/agarwalmehul"
+    }
+  ],
+  "license": "MIT",
+  "exports": {
+    ".": "./src/Blacklister.mjs",
+    "./encrypt": "./src/lib/encrypt.mjs",
+    "./hash": "./src/lib/hash.mjs",
+    "./mask": "./src/lib/mask.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": []
+}
